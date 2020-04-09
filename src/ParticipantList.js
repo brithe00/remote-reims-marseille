@@ -18,8 +18,8 @@ function ParticipantList() {
   // console.log(participants);
   return (
     <ul>
-      {participants.map(item => (
-        <Participant name={item.name} hasToken={item.hasToken} />
+      {participants.map(participant => (
+        <Participant key={participant.name} name={participant.name} hasToken={participant.hasToken} />
       ))}
     </ul>
   );
